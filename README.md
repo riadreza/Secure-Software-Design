@@ -30,4 +30,17 @@ To verify their identity, a user can provide
 
 After the authentication system identifies a user, the authorization system takes over and applies the predetermined access levels to the user. Authorization is the process of applying access control rules to a user process and determining if a particular user process can access an object. There are numerous forms of access control systems, and these are covered later in the chapter. Three elements are used in the discussion of authorization: a requestor (sometimes referred to as the subject), the object, and the type or level of access to be granted. The authentication system identifies the subject to be one of a known set of subjects associated with a system. When a subject requests access to an object, be it a file, a program, an item of data, or any other resource, the authorization system makes the access determination as to grant or deny access. A third element is the type of access requested, with the common forms being read, write, create, delete, or the right to grant access rights to other subjects.
 
+**Accounting (Auditing)**
+
+Accounting is a means of measuring activity. In IT systems, this can be done by logging crucial elements of activity as they occur. Concerning data elements, accounting is needed when activity is determined to be crucial to the degree that it may be audited at a later date and time. Management has a responsibility to ensure work processes are occurring as designed. Should there be a disconnect between planned and actual operational performance metrics, then it is management’s responsibility to initiate and ensure corrective actions are taken and effective. Auditing is management’s lens to observe the operation in a nonpartisan manner. Auditing is the verification of what happened on a system. Security-level auditing can be performed at several levels, from an analysis of the logging function that logs specific activities of a system, to the management verification of the existence and operation of specific controls on a system.
+
+**Non-repudiation**
+
+Non-repudiation is the concept of preventing a subject from denying a previous action with an object in a system. When authentication, authorization, and auditing are properly configured, the ability to prevent repudiation by a specific subject concerning an action and an object is ensured.&#x20;
+
+**System Tenets**
+
+The creation of software systems involves the development of several foundational system elements within the overall system. Communication between components requires the management of a communication session, commonly called session management. When a program encounters an unexpected condition, an error can occur. Securely managing error conditions is referred to as exception management. Software systems require configuration in production, and configuration management is a key element in the creation of secure systems.
+
+\
 \
