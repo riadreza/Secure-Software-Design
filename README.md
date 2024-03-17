@@ -42,5 +42,25 @@ Non-repudiation is the concept of preventing a subject from denying a previous a
 
 The creation of software systems involves the development of several foundational system elements within the overall system. Communication between components requires the management of a communication session, commonly called session management. When a program encounters an unexpected condition, an error can occur. Securely managing error conditions is referred to as exception management. Software systems require configuration in production, and configuration management is a key element in the creation of secure systems.
 
+**Session Management**
+
+Software systems frequently require communications between program elements or between users and program elements. The control of the communication session between these elements is essential to preventing the hijacking of an authorized communication channel by an unauthorized party. Session management refers to the design and implementation of controls to ensure that communication channels are secured from unauthorized access and disruption. A common example is the Transmission Control Protocol (TCP) handshake which enables the sequential numbering of packets and allows for packet retransmission for missing packets; it also prevents the introduction of unauthorized packets and the hijacking of the TCP session. Session management requires additional work and has a level of overhead, and hence may not be warranted in all communication channels. User Datagram Protocol (UDP), a connectionless/sessionless protocol, is an example of a communication channel that would not have session management and session-related overhead. An important decision early in the design process is determining when sessions need to be managed and when they do not. Understanding the use of the channel and its security needs should dictate the choice of whether session management is required or not.
+
+**Exception Management**
+
+There are times when a system encounters an unknown condition or is given input that results in an error. The process of handling these conditions is referred to as exception management. A remote resource may not respond, or there may be a communication error—whatever the cause of the error, the system needs to respond properly. Several criteria are necessary for secure exception management. First, all exceptions must be detected and handled. Second, the system should be designed so as not fail to in an insecure state. Last, all communications associated with the exception should not leak information.
+
+**Configuration Management**
+
+Dependable software in production requires the managed configuration of the functional connectivity associated with today’s complex, integrated systems. Initialization parameters, connection strings, paths, keys, and other associated variables are typical examples of configuration items. As these elements can have significant effects on the operation of a system, they are part of the system and need to be properly controlled for the system to remain secure. The identification and management of these elements is part of the security process associated with a system.&#x20;
+
+Management has a responsibility to maintain production systems in a secure state, and this requires that configurations be protected from unauthorized changes. This has resulted in the concept of configuration management, change control boards and a host of workflow systems designed to control the configuration of a system. One important technique frequently employed is the separation of duties between production personnel and development/test personnel. This separation is one method to prevent the contamination of approved configurations in production.
+
+**Secure Design Tenets**
+
+Secure designs do not happen by accident. They are the product of **deliberate architecture**, and **deliberate plans**, and **are structured** upon a foundation of secure design principles. These principles have borne the test of time and have repeatedly proven their worth in a wide variety of security situations. The seminal work in this area, the application of secure design principles to computer systems, is Saltzer and Schroeder’s 1975 article “The Protection of Information in Computer Systems.”
+
+\
+\
 \
 \
